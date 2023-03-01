@@ -16,7 +16,7 @@ public class SHA256Helper {
             byte[] hash = digest.digest(data.getBytes(StandardCharsets.UTF_8));
 
             // Turning into hexadecimal values instead of bytes
-            StringBuffer hexadecimalString = new StringBuffer();
+            StringBuilder hexadecimalString = new StringBuilder();
 
             for (int i = 0; i < hash.length; i++){
                 String hexadecimal = Integer.toHexString(0xff & hash[i]);
