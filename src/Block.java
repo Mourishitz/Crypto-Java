@@ -23,6 +23,7 @@ public class Block {
         this.transaction = transaction;
         this.previousHash = previousHash;
         this.timeStamp = new Date().getTime();
+        generateHash();
 
     }
 
